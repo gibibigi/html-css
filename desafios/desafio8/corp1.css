@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body{
+    background-color: gray;
+}
+
+h1{
+    color: rgb(44, 202, 230);
+}
+
+p{
+    color: rgb(44, 202, 230);
+}
+
+ul{
+    color: rgb(58, 155, 102);
+}
