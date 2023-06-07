@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table{
+            border-collapse: collapse;
+        }
+        
+        th, td{
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+    </style>
+    <title>Tabela completa</title>
+</head>
+<body>
+    <h1>Tabela de preferência de filmes</h1>
+    <table>
+        <caption>Filmes favoritos</caption>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Maria Fatima</td>
+                <td>Bazinga</td>
+                <td>Cachaca</td>
+                <td>Deduração</td>
+            </tr>
+            <tr>
+                <td>Elizangela Nunes</td>
+                <td>Farofa</td>
+                <td>Gargamel</td>
+                <td>Helicoptero</td>
+            </tr>
+            <tr>
+                <td>Ines Malafronte</td>
+                <td>Jurassic</td>
+                <td>Kaboom</td>
+                <td>Looping</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Mario Ito</td>
+                <td>Namor</td>
+                <td>Obliterar</td>
+                <td>Prolitariado</td>
+            </tr>
+            <tr>
+                <td>Quants Jr</td>
+                <td>Robos</td>
+                <td>Supers</td>
+                <td>Tracey</td>
+            </tr>
+            <tr>
+                <td>Udimar Santos</td>
+                <td>Vanguard</td>
+                <td>Width</td>
+                <td>Xangai</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
