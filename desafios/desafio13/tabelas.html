@@ -11,13 +11,25 @@
 
         table{
             border-collapse:collapse;
-            width: 300px;
+            /*width: 300px;*/
         }
 
-        td{
+        th, td{
             padding: 10px;
             border: 1px solid black;
             text-align: center;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
         }
     </style>
     <title>Desafio 13</title>
@@ -79,6 +91,78 @@
         <tr>
             <td colspan="4">M</td>
         </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <caption>Boletim de Notas</caption>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplina</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Notas 1</th>
+                <th scope="col">Notas 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Mulheres</th>
+                <td>Matemática</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>8.0</td>
+                <td>8.0</td>
+                <td>8.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>6.0</td>
+                <td>6.0</td>
+                <td>6.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>5.0</td>
+                <td>8.0</td>
+                <td>7.0</td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th scope="row" colspan="4">Média de exatas</th>
+                <td>8.0</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td>8.0</td>
+                <td>3.0</td>
+                <td>5.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>9.0</td>
+                <td>6.0</td>
+                <td>6.5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Média de Humanas</th>
+                <td>5.5</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>

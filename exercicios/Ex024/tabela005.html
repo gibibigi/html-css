@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .caqua{
+            background-color: aqua;
+        }
+
+        .cbisq{
+            background-color: bisque;
+        }
+    </style>
+    <title>Exercicio de tabelas</title>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="caqua">
+            <col class="cbisq" span="2">
+            <col class="caqua">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Lucas Alves</td>
+            <td>M</td>
+            <td>24</td>
+            <td>Analista de Sistemas</td>
+        </tr>
+        <tr>
+            <td class="destaque">Lucia Aves</td>
+            <td>F</td>
+            <td>21</td>
+            <td>Auxiliar de Sistemas</td>
+        </tr>
+        <tr>
+            <td>Lucio Alves</td>
+            <td>M</td>
+            <td>41</td>
+            <td>Desenvolvedor de Sistemas</td>
+        </tr>
+        <tr>
+            <td>Luan Avios</td>
+            <td>M</td>
+            <td>18</td>
+            <td>Gerente de Sistemas Econômicos</td>
+        </tr>
+        <tr>
+            <td>Laila Soares</td>
+            <td>F</td>
+            <td>35</td>
+            <td>Sistemas Ecológicos</td>
+        </tr>
+        <tr>
+            <td>Lucas Santos</td>
+            <td>M</td>
+            <td>38</td>
+            <td>Analista de Recursos</td>
+        </tr>
+    </table>
+</body>
+</html>
